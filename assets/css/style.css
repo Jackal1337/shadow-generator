@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(109, 109, 109, 0.5), rgba(17, 17, 17, 0.5)), url('https://i.imgur.com/mlsroVp.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.titles {
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 100px 0 100px;
+    text-align: center;
+}
+
+.container {
+    background: #d3d3d3c2;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    margin: 30px 50px 100px 50px;
+}
+
+.result {
+    border-radius: 20px;
+    border: 2px solid #00000078;
+    padding: 100px 0;
+    margin: 15px 0;
+}
+
+#element {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background: rgb(44 14 154);
+    margin: auto;
+    border-radius: 10px;
+}
+
+.sliders {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 20px 15px;
+}
+
+.slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+.code-wrapper {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    gap: 5;
+}
+
+textarea {
+    resize: none;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+#liveToastBtn {
+    background: linear-gradient(#2b2b2b, rgb(206 206 206)) !important;
+    border-radius: 10px !important;
+    border: none !important;
+    margin: 5px;
+    color: white !important;
+    transition: .7s;
+}
+
+#liveToastBtn:hover {
+    background: linear-gradient( rgb(206, 206, 206), #2b2b2b) !important;
+    transition: .7s;
+}
